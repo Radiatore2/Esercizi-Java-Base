@@ -1,5 +1,9 @@
-public class Animale extends Main{
-    @Override
+public class Animale{
+
+    public void faiIlVerso(){
+
+        System.out.println("Bau!");
+    }
     public String toString() {
         return "Bau!";
     }
