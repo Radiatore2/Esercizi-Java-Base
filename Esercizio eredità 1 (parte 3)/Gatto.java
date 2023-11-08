@@ -1,4 +1,9 @@
-public class Gatto extends Main{
+public class Gatto extends Animale {
+
+    public void faiIlVerso(){
+
+        System.out.println("Miao!");
+    }
 
     @Override
     public String toString() {
