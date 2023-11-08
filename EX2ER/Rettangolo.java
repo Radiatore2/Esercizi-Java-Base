@@ -9,7 +9,7 @@ public class Rettangolo extends Forma {
         this.h = h;
     }
     public int calcolaArea(){
-        return (b * h) / 2;
+        return (b * h);
     }
 }
 
