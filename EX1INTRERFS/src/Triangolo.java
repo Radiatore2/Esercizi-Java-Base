@@ -1,4 +1,4 @@
-public class Triangolo extends Forma {
+public class Triangolo implements Forma {
     private int b;
     private int h;
 
