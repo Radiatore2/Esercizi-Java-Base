@@ -10,3 +10,4 @@ public class EX1ABSTR {
         System.out.println(triangolo.calcolaArea());
     }
 }
+
