@@ -5,7 +5,14 @@ public class EX2STRBUILD {
         StringBuilder x = new StringBuilder();
 
         if  (index<input.length()){
-            x.append(input.charAt(index));
+            String charValue = Integer.toHexString(input.charAt(index));
+
+            x.append("\\u");
+
+            for (int i = charValue.length(); i < 4; i++) {
+                x.append("0");
+            }
+            x.append(charValue);
         } else {
             x.append("L'indice è superiore alla stringa");
         }
