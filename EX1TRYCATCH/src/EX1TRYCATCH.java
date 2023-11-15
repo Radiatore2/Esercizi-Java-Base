@@ -1,7 +1,7 @@
 public class EX1TRYCATCH {
     public static void main(String[] args) {
 
-        int num = 6;
+        int num = 22;
         int min = 1;
         int max = 10;
 
@@ -9,7 +9,7 @@ public class EX1TRYCATCH {
             boolean range = checkRange(num, min, max);
             System.out.println(range);
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("error");
         }
     }
 
