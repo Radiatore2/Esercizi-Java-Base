@@ -1,11 +1,12 @@
 public class EX1TRYCATCH {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         int num = 22;
         int min = 1;
         int max = 10;
 
         try {
+
             boolean range = checkRange(num, min, max);
             System.out.println(range);
         } catch (Exception e) {
