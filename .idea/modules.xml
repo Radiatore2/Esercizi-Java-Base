@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EX1ENUM/EX1ENUM.iml" filepath="$PROJECT_DIR$/EX1ENUM/EX1ENUM.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1TRYCATCH/EX1EXCEPTIONS.iml" filepath="$PROJECT_DIR$/EX1TRYCATCH/EX1EXCEPTIONS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX1HASHSET/EX1HASHSET.iml" filepath="$PROJECT_DIR$/EX1HASHSET/EX1HASHSET.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1INTRERFS/EX1INTRERFS.iml" filepath="$PROJECT_DIR$/EX1INTRERFS/EX1INTRERFS.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1NULL/EX1NULL.iml" filepath="$PROJECT_DIR$/EX1NULL/EX1NULL.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1POL/EX1POL.iml" filepath="$PROJECT_DIR$/EX1POL/EX1POL.iml" />
