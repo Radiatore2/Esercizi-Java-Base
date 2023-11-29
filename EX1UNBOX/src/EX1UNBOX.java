@@ -3,36 +3,38 @@ public class EX1UNBOX {
         int num1 = 5;
         int num2 = 10;
         char character = 'A';
+        Integer numInt1 = 15;
+        Integer numInt2 = 12;
+        Double numDouble = 3.14;
+        Character charCharacter = 'B';
 
-        stampSum(num1, num2);
-        stampCharacter(character);
-        stampSum(Integer.valueOf(num1), Integer.valueOf(num2));
-        stampCharacter(Character.valueOf(character));
+        Integer numeroIntegerAutoBoxing = num1;
+        Double numeroDoubleAutoBoxing = numDouble;
+        Character carattereAutoBoxing = character;
 
-        int numInt = 15;
-        double numDouble = 3.14;
-        char charCharacter = 'B';
 
-        Integer numeroIntegerBoxing = numInt;
-        Double numeroDoubleBoxing = numDouble;
-        Character carattereBoxing = charCharacter;
-
-        int numeroInteroUnboxing = numeroIntegerBoxing;
-        double numeroDoubleUnboxing = numeroDoubleBoxing;
+        int numeroInteroUnboxing = numInt1;
+        double numeroDoubleUnboxing = numDouble;
         char carattereUnboxing = charCharacter;
+        System.out.println(numeroInteroUnboxing);
+        System.out.println(numeroDoubleUnboxing);
+        System.out.println(carattereUnboxing);
+        System.out.println(numeroIntegerAutoBoxing);
+        System.out.println(numeroDoubleAutoBoxing);
+        System.out.println(carattereAutoBoxing);
     }
 
-    public static void stampSum(int a, int b) {
-        int sum = a + b;
+    public static void stampSum(int num1, int num2) {
+        int sum = num1 + num2;
         System.out.println(sum);
     }
 
-    public static void stampCharacter(char c) {
-        System.out.println(c);
+    public static void stampCharacter(char character) {
+        System.out.println(character);
     }
 
-    public static void stampSum(Integer a, Integer b) {
-        int sum = a + b;
+    public static void stampSum(Integer numInt1, Integer numInt2) {
+        int sum = numInt1 + numInt2;
         System.out.println(sum);
     }
 
