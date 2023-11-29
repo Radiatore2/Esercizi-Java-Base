@@ -22,20 +22,21 @@ public class EX1UNBOX {
         System.out.println(numeroIntegerAutoBoxing);
         System.out.println(numeroDoubleAutoBoxing);
         System.out.println(carattereAutoBoxing);
+
     }
 
-    public static void stampSum(int num1, int num2) {
-        int sum1 = num1 + num2;
-        System.out.println(sum1);
+    public static Integer stampSum(int num1, int num2) {
+        Integer sum1 = num1 + num2;
+        return sum1;
     }
 
     public static void stampCharacter(char character) {
         System.out.println(character);
     }
 
-    public static void stampSum(Integer numInt1, Integer numInt2) {
+    public static int stampSum(Integer numInt1, Integer numInt2) {
         int sum2 = numInt1 + numInt2;
-        System.out.println(sum2);
+        return sum2;
     }
 
     public static void stampCharacter(Character c) {
