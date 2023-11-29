@@ -25,8 +25,8 @@ public class EX1UNBOX {
     }
 
     public static void stampSum(int num1, int num2) {
-        int sum = num1 + num2;
-        System.out.println(sum);
+        int sum1 = num1 + num2;
+        System.out.println(sum1);
     }
 
     public static void stampCharacter(char character) {
@@ -34,8 +34,8 @@ public class EX1UNBOX {
     }
 
     public static void stampSum(Integer numInt1, Integer numInt2) {
-        int sum = numInt1 + numInt2;
-        System.out.println(sum);
+        int sum2 = numInt1 + numInt2;
+        System.out.println(sum2);
     }
 
     public static void stampCharacter(Character c) {
