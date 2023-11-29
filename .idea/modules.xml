@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/EX1UNBOX/EX1UNBOX.iml" filepath="$PROJECT_DIR$/EX1UNBOX/EX1UNBOX.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX2STRBUILD/EX2STRBUILD.iml" filepath="$PROJECT_DIR$/EX2STRBUILD/EX2STRBUILD.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX2TRYCATCH/EX2TRYCATCH.iml" filepath="$PROJECT_DIR$/EX2TRYCATCH/EX2TRYCATCH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EX3HASHSET/EX3HASHSET.iml" filepath="$PROJECT_DIR$/EX3HASHSET/EX3HASHSET.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Esercizi-Java-Base.iml" filepath="$PROJECT_DIR$/.idea/Esercizi-Java-Base.iml" />
     </modules>
   </component>
