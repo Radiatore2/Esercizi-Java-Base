@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/EX1ARRLIST/EX1ARRLIST.iml" filepath="$PROJECT_DIR$/EX1ARRLIST/EX1ARRLIST.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1ENUM/EX1ENUM.iml" filepath="$PROJECT_DIR$/EX1ENUM/EX1ENUM.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1TRYCATCH/EX1EXCEPTIONS.iml" filepath="$PROJECT_DIR$/EX1TRYCATCH/EX1EXCEPTIONS.iml" />
       <module fileurl="file://$PROJECT_DIR$/EX1HASHSET/EX1HASHSET.iml" filepath="$PROJECT_DIR$/EX1HASHSET/EX1HASHSET.iml" />
