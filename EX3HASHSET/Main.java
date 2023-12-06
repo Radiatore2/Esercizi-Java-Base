@@ -1,39 +1,34 @@
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class Main {
 
-            public static void main(String[] args) {
+    public static HashSet<String> makingHashSet() {
+        HashSet<String> fruit = new HashSet<>();
+        fruit.add("Mela");
+        fruit.add("Pera");
+        fruit.add("Anguria");
+        return fruit;
+    }
+    public static void main(String[] args) {
+        HashSet<String> myHashSet = makingHashSet();
+        String newFruit = "Lampone";
 
-                HashSet<String> fruit = new HashSet<String>(Arrays.asList("Mela", "Kiwi", "Ciliegia"));
-                String objectToCompare = "Elemento da confrontare";
-                removeElements(fruit, objectToCompare);
-                fruit.clear();
-
-                System.out.println(fruit);
-
-            }
-
-            private static HashSet<String> fruitHashset() {
-                HashSet<String> fruit = new HashSet<String>();
-
-                fruit.add("Mela");
-                fruit.add("Pera");
-                fruit.add("Banana");
-                fruit.add("Lampone");
-
-                return fruit;
-            }
-
-            private static void removeElements(HashSet<String> fruit, String controlDuplicate) {
-                HashSet<String> fruitRemoved = new HashSet<>();
-
-                for (String element : fruit) {
-                    if (element.equals(controlDuplicate)) {
-                        fruitRemoved.add(element);
-                    }
-                }
-
-                fruit.removeAll(fruitRemoved);
+        Iterator<String> iterator = myHashSet.iterator();
+        while (iterator.hasNext()) {
+            String elemento = iterator.next();
+            if (elemento.equals(newFruit)) {
+                iterator.remove();
             }
         }
+
+        myHashSet.clear();
+
+        if (myHashSet.isEmpty()) {
+            System.out.println("HashSet is empty");
+        } else {
+            System.out.println("HashSet is full");
+        }
+    }
+}
