@@ -18,7 +18,7 @@ public class EX5TEST {
         LocalDateTime finalDateTime = nextYearMinusMonth.plusDays(7);
 
         ZonedDateTime zonedDateTime = finalDateTime.atZone(ZoneId.of("Europe/Rome"));
-        DateTimeFormatter italianFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").localizedBy(Locale.ITALY);
+        DateTimeFormatter italianFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss").localizedBy(Locale.ITALY);
         String localizedDateTime = zonedDateTime.format(italianFormatter);
 
         System.out.println(localizedDateTime);
