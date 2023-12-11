@@ -7,21 +7,28 @@ import java.util.Locale;
 public class EX5TEST {
 
     public static void main(String[] args) {
-        String dateString = "2023-03-01T13:00:00Z";
-        DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
-        LocalDateTime dateTime = LocalDateTime.parse(dateString, formatter.withZone(ZoneId.of("UTC")));
+        String dataString = "2023-03-01T13:00:00Z";
 
-        LocalDateTime nextYear = dateTime.plusYears(1);
+        ZonedDateTime data = ZonedDateTime.parse(dataString, DateTimeFormatter.ISO_DATE_TIME);
 
-        LocalDateTime nextYearMinusMonth = nextYear.minusMonths(1);
+        ZonedDateTime dateTimeLocal = localDate(data);
 
-        LocalDateTime finalDateTime = nextYearMinusMonth.plusDays(7);
+        System.out.println(dateTimeLocal);
+    }
 
-        ZonedDateTime zonedDateTime = finalDateTime.atZone(ZoneId.of("Europe/Rome"));
-        DateTimeFormatter italianFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss").localizedBy(Locale.ITALY);
-        String localizedDateTime = zonedDateTime.format(italianFormatter);
+    public static ZonedDateTime localDate(ZonedDateTime date) {
 
-        System.out.println(localizedDateTime);
+        date = date.plusYears(1);
+
+        date = date.minusMonths(1);
+
+        date = date.plusDays(7);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss z", Locale.ITALY);
+
+        String dateFormat = formatter.format(date);
+
+        return date;
     }
 
 }

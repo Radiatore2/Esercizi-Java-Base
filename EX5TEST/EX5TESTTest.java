@@ -20,7 +20,7 @@ class EX5TESTTest {
 
         LocalDateTime finalDateTime = testDateTime.plusYears(1).minusMonths(1).plusDays(7);
 
-        DateTimeFormatter italianFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter italianFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
         String expectedLocalizedDateTime = finalDateTime.format(italianFormatter);
 
