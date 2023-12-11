@@ -1,29 +1,20 @@
 package EX5TEST;
 
-import java.time.LocalDateTime;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-class EX5TESTTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    @org.junit.jupiter.api.Test
-    void main() {
+public class EX5TESTTest {
 
-        LocalDateTime initialDateTime = LocalDateTime.of(2023, 3, 1, 13, 0, 0);
+    @Test
+    public void localDate() {
+        String dataString = "2023-03-01T13:00:00Z";
+        ZonedDateTime date = ZonedDateTime.parse(dataString, DateTimeFormatter.ISO_DATE_TIME);
+        ZonedDateTime dataModification = EX5TEST.localDate(date);
 
-        LocalDateTime expectedDateTime = initialDateTime.plusYears(1).minusMonths(1).plusDays(7);
+        ZonedDateTime dataAspect = ZonedDateTime.parse("2024-02-08T13:00:00Z", DateTimeFormatter.ISO_DATE_TIME);
 
-        LocalDateTime actualDateTime = initialDateTime.plusYears(1).minusMonths(1).plusDays(7);
-
-        assertEquals(expectedDateTime, actualDateTime);
-
-        LocalDateTime testDateTime = LocalDateTime.of(2023, 3, 1, 13, 0, 0);
-
-        LocalDateTime finalDateTime = testDateTime.plusYears(1).minusMonths(1).plusDays(7);
-
-        DateTimeFormatter italianFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-
-        String expectedLocalizedDateTime = finalDateTime.format(italianFormatter);
-
-        assertEquals("2024-01-08 13:00:00", expectedLocalizedDateTime);
+        assertEquals(dataAspect, dataModification);
     }
 }
