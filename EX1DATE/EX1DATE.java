@@ -2,6 +2,7 @@ package EX1DATE;
 
 import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class EX1DATE {
     public static void main(String[] args) {
@@ -10,13 +11,13 @@ public class EX1DATE {
 
         OffsetDateTime dateTime = OffsetDateTime.parse(inputString);
 
-        DateTimeFormatter FULL = DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy 'at' HH:mm:ss");
-        DateTimeFormatter MEDIUM = DateTimeFormatter.ofPattern("MMM dd, yyyy 'at' HH:mm:ss");
-        DateTimeFormatter SHORT = DateTimeFormatter.ofPattern("MM/dd/yy 'at' HH:mm");
+        DateTimeFormatter fullFormatter  = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+        DateTimeFormatter mediumFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);
+        DateTimeFormatter shortFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
 
-        String fullFormatted = dateTime.format(FULL);
-        String mediumFormatted = dateTime.format(MEDIUM);
-        String shortFormatted = dateTime.format(SHORT);
+        String fullFormatted = dateTime.format(fullFormatter);
+        String mediumFormatted = dateTime.format(mediumFormatter);
+        String shortFormatted = dateTime.format(shortFormatter);
 
         System.out.println(fullFormatted);
         System.out.println(mediumFormatted);
